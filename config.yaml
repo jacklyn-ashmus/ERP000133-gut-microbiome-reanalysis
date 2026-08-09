@@ -1,0 +1,22 @@
+project_name: ERP000133
+metadata: ERP000133_clean_metadata.tsv
+
+# Primer settings used by run_QIIME2.sh
+forward_primer: AGGATTAGATACCCTGGTA
+reverse_complement_primer: GTCGTCAGCTCGTGYYG
+forward_allowed_truncation: 3
+reverse_allowed_truncation: 5
+min_read_length: 50
+
+# Resource settings. Adjust these to the Docker/host resources you want to expose.
+qiime_threads: 4
+qc_threads: 4
+r_threads: 4
+taxonomy_threads: 4
+
+# All ERP000133 FASTQs are ERR011058 ... ERR011086.
+# {accession} is filled by the Snakefile.
+ena_fastq_url_template: "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR011/{accession}/{accession}.fastq.gz"
+
+silva_genus_url: "https://zenodo.org/records/14169026/files/silva_nr99_v138.2_toGenus_trainset.fa.gz"
+silva_species_url: "https://zenodo.org/records/14169026/files/silva_nr99_v138.2_toSpecies_trainset.fa.gz"

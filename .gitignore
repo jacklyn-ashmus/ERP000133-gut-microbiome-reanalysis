@@ -1,0 +1,40 @@
+# Raw sequencing data
+data/fastqs/
+
+# Downloaded taxonomy databases
+taxonomy_training_classifiers/
+
+# QIIME / preprocessing output
+initial_qc/
+qiime2_results_exported/
+
+# Generated analysis objects and output
+taxonomy_assignment/
+analysis/
+figures/
+report_tables/
+summary_tables/
+quarto_plot_tables/
+logs/
+
+# QIIME artifacts
+*.qza
+*.qzv
+
+# R temporary files
+.Rhistory
+.RData
+.Rproj.user/
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# images 
+*.png
+*.pdf
+
+
+# OS junk
+.DS_Store
+Thumbs.dbsoftware/
+software/
